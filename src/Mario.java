@@ -1,22 +1,20 @@
 
 
-import java.awt.*;
-import javax.swing.*;
-import java.awt.image.*;
-import java.util.*;
+import java.awt.Shape;
+import java.util.ArrayList;
 
 public class Mario extends MovingImage {
 
 	public static final int MARIO_WIDTH = 40;
 	public static final int MARIO_HEIGHT = 60;
-	
+
 	public Mario(int x, int y) {
 		super("mario.png", x, y, MARIO_WIDTH, MARIO_HEIGHT);
 	}
 
 	// METHODS
 	public void walk(int dir) {
-		// WALK!
+		super.x += dir * 5;
 	}
 
 	public void jump() {
